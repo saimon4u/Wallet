@@ -27,4 +27,8 @@ interface AuthApi {
     suspend fun getUserId(
         @Header("Authorization") token: String
     ): String
+
+    companion object{
+        const val BASE_URL = "https://jwt-authentication-server.onrender.com/"
+    }
 }
